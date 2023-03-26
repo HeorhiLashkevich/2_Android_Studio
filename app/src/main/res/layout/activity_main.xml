@@ -6,33 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/say_hello"
+    <TextView
+        android:id="@+id/counts"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_70"
-        android:text="@string/say_hello"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="@dimen/sp_80"
+        app:layout_constraintBottom_toTopOf="@id/count"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/count"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_160"
+        android:background="@color/grey"
         android:text="@string/count"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/hello_counts"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/yellow"
-        android:gravity="center"
-        android:text="0"
-        android:textSize="@dimen/sp_200"
-        app:layout_constraintBottom_toTopOf="@id/count"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/say_hello" />
+        app:layout_constraintTop_toBottomOf="@id/counts" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_134"
+        android:hint="@string/this_is_an_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/count" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
