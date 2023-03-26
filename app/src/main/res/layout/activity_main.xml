@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,33 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/say_hello"
+
+    <EditText
+        android:id="@+id/websiteEditText"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_70"
-        android:text="@string/say_hello"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:hint="@string/http_developer_adnroid_com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/count"
+    <EditText
+        android:id="@+id/openLocationEditText"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_70"
-        android:text="@string/count"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/hello_counts"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/yellow"
-        android:gravity="center"
-        android:text="0"
-        android:textSize="@dimen/sp_200"
-        app:layout_constraintBottom_toTopOf="@id/count"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:hint="@string/golden_gate_bridge"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/say_hello" />
+        app:layout_constraintTop_toBottomOf="@id/openWebsite" />
+
+    <EditText
+        android:id="@+id/shareThisTextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:hint="@string/twas_brillig_and_the_slithy_toves"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openLocation" />
+
+    <Button
+        android:id="@+id/openWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/websiteEditText" />
+
+    <Button
+        android:id="@+id/openLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openLocationEditText" />
+    <Button
+        android:id="@+id/shareThisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_this_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shareThisTextEditText" />
+    <Button
+        android:id="@+id/takeAPicture"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_a_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shareThisText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

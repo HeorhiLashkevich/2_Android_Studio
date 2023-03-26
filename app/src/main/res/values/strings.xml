@@ -13,4 +13,12 @@
     <string name="_0">0</string>
     <string name="count">count</string>
     <string name="hello">Hello!</string>
+    <string name="open_website">OPEN WEBSITE</string>
+    <string name="http_developer_adnroid_com">http://developer.adnroid.com</string>
+    <string name="golden_gate_bridge">Golden Gate Bridge</string>
+    <string name="open_location">OPEN LOCATION</string>
+    <string name="share_this_text">SHARE THIS TEXT</string>
+    <string name="take_a_picture">TAKE A PICTURE</string>
+    <string name="twas_brillig_and_the_slithy_toves">Twas brillig and the slithy toves</string>
+    <string name="share_this_text_with">\"Share this text with: \"</string>
 </resources>
