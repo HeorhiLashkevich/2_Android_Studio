@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_40sp">40sp</dimen>
+    <dimen name="dp_600">600dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="sp_200">200sp</dimen>
+    <dimen name="sp_60">60sp</dimen>
+</resources>
